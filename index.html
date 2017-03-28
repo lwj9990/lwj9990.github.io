@@ -766,16 +766,16 @@ $(document).ready(function () {
          * Reinitializes the wookmark handler after all images have loaded
          */
         function applyLayout() {
-            $tiles.imagesLoaded(function () {
+//            $tiles.imagesLoaded(function () {
 //                 Destroy the old handler
-                if ($handler.wookmarkInstance) {
-                    $handler.wookmarkInstance.clear();
-                }
+//                if ($handler.wookmarkInstance) {
+//                    $handler.wookmarkInstance.clear();
+//                }
 
                 // Create a new layout handler.
                 $handler = $('li', $tiles);
                 $handler.wookmark(options);
-            });
+//            });
         }
 
 
